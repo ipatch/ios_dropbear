@@ -13,7 +13,7 @@
 # password. If you'd like to change this, change svr-authpasswd.c
 
 # JTOOL="$HOME/dev/jtool/jtool"
-JTOOL = "$HOME/.local/bin/jtool"
+JTOOL="$HOME/.local/bin/jtool"
 # ARCH="arm64"
 ARCH="armv7" # iPod Touch 5G, Apple A9 processor
 # SDK="iphoneos10.2"
