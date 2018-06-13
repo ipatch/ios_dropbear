@@ -31,7 +31,7 @@ autoreconf -i
 make distclean
 
 ./configure --host=arm-apple-darwin
-make CC="$CC"
+make CC="$CC" PROGRAMS="dropbear dbclient dropbearkey dropbearconvert scp ssh"
 
 if [ ! $? -eq 0 ]; then
     echo "there was an error during compilation"
@@ -40,7 +40,7 @@ fi
 
 # we need to sign the binaries
 # see saurik.com/id/8
-for i in dropbear dbclient dropbearconvert dropbearkey; do
+for i in dropbear dbclient dropbearconvert dropbearkey scp; do
     $JTOOL --sign $i
     mv out.bin $i
     $JTOOL --sig $i
