@@ -14,5 +14,6 @@ dbclient
 dropbear
 dropbearconvert
 dropbearkey
+scp
 Makefile
 # NOTE: build files can be cleaned with `git clean -f`

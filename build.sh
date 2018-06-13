@@ -31,7 +31,7 @@ autoreconf -i
 make distclean
 
 ./configure --host=arm-apple-darwin
-make CC="$CC" PROGRAMS="dropbear dbclient dropbearkey dropbearconvert scp ssh"
+make CC="$CC" PROGRAMS="dropbear dbclient dropbearkey dropbearconvert scp"
 
 if [ ! $? -eq 0 ]; then
     echo "there was an error during compilation"
